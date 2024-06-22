@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySwiftApps - Useful and Fun Software for Better Living</title>
+    <title id="page-title">MySwiftApps - Useful and Fun Software for Better Living</title>
+
     <meta name="description" content="MySwiftApps offers useful and fun software to improve your life and the lives of those you love.">
     <meta name="keywords" content="apps, software, productivity, lifestyle">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -81,7 +82,7 @@
     </footer>
 
     <section class="extended-footer">
-        <div class="footer-logo">ANDY</div>
+        <div class="footer-logo">Daniel J.</div>
         <div class="footer-links">
             <a href="#">SUPPORT</a>
             <a href="#">SHOP</a>
@@ -90,10 +91,24 @@
             <a href="#">TERMS & PRIVACY</a>
         </div>
         <div class="copyright">
-            © 2023 ANDY WORKS, LLC
+            © 2023 MySwiftApps
         </div>
     </section>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.getElementById("page-title");
+            let angle = 0;
+            const interval = setInterval(() => {
+                angle += 5;
+                title.style.transform = `rotate(${Math.sin(angle) * 2}deg)`;
+                if (angle >= 360) {
+                    clearInterval(interval);
+                    title.style.transform = 'rotate(0deg)';
+                }
+            }, 16); // roughly 60 frames per second
+        });
+    </script>
 </body>
 </html>

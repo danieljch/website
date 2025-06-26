@@ -151,20 +151,23 @@ footer {
     font-size: 0.9rem;
     color: #666;
 }
-@keyframes pulseTitle {
+@keyframes gentleGlow {
     0% {
-        transform: rotate(0deg) scale(1);
+        text-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+        transform: scale(1);
     }
     50% {
-        transform: rotate(2deg) scale(1.02);
+        text-shadow: 0 0 15px rgba(74, 144, 226, 0.6), 0 0 25px rgba(74, 144, 226, 0.4);
+        transform: scale(1.01);
     }
     100% {
-        transform: rotate(0deg) scale(1);
+        text-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+        transform: scale(1);
     }
 }
 #page-title {
     display: inline-block;
-    animation: pulseTitle 4s ease-in-out infinite;
+    animation: gentleGlow 3s ease-in-out infinite;
 }
 @keyframes rotateLogo {
     0% { transform: rotate(0deg); }

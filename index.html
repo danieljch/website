@@ -99,19 +99,5 @@
     </section>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const title = document.getElementById("page-title");
-            let angle = 0;
-            const interval = setInterval(() => {
-                angle += 5;
-                title.style.transform = `rotate(${Math.sin(angle) * 2}deg)`;
-                if (angle >= 360) {
-                    clearInterval(interval);
-                    title.style.transform = 'rotate(0deg)';
-                }
-            }, 16); // roughly 60 frames per second
-        });
-    </script>
 </body>
 </html>

@@ -21,7 +21,6 @@ nav {
     font-weight: bold;
     color: #333;
     display: inline-block;
-    animation: rotateLogo 10s linear infinite;
 }
 .nav-links {
     display: flex;

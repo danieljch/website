@@ -64,11 +64,11 @@ nav {
     padding: 4rem 2rem;
 }
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 .cta-button {
@@ -98,8 +98,8 @@ nav {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 .feature img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     margin-bottom: 1rem;
 }

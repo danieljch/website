@@ -22,12 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
         currentLanguage = lang;
         
         // Update all elements with data attributes
-        const elements = document.querySelectorAll('[data-en][data-es]');
+        const elements = document.querySelectorAll('[data-en][data-es], [data-en-html], [data-es-html]');
         elements.forEach(element => {
+            const htmlAttr = element.getAttribute(`data-${lang}-html`);
+            const textAttr = element.getAttribute(`data-${lang}`);
             if (element.tagName === 'TITLE') {
-                document.title = element.getAttribute(`data-${lang}`);
-            } else {
-                element.textContent = element.getAttribute(`data-${lang}`);
+                if (textAttr) {
+                    document.title = textAttr;
+                }
+            } else if (htmlAttr) {
+                element.innerHTML = htmlAttr;
+            } else if (textAttr) {
+                element.textContent = textAttr;
             }
         });
 

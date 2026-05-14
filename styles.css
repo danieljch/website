@@ -126,8 +126,17 @@ nav {
     padding: 2rem 1.5rem;
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
     background: white;
+}
+.feature:nth-child(1) {
+    background: #e8f4fd;
+}
+.feature:nth-child(2) {
+    background: #fef9e7;
+}
+.feature:nth-child(3) {
+    background: #eafaf1;
 }
 .feature:hover {
     transform: translateY(-6px);

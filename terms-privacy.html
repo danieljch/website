@@ -6,21 +6,26 @@
     <title data-en="Terms & Privacy - MySwiftApps" data-es="Términos y Privacidad - MySwiftApps">Terms & Privacy - MySwiftApps</title>
     <meta name="description" content="Privacy policy and terms for MySwiftApps software." data-en="Privacy policy and terms for MySwiftApps software." data-es="Política de privacidad y términos para el software de MySwiftApps.">
     <meta name="keywords" content="privacy policy, terms, MySwiftApps, apps, software">
+    <link rel="icon" href="images/logoweb.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="150" height="auto"></div>
+            <div class="logo"><a href="index.html"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="120" height="auto"></a></div>
             <div class="nav-links">
                 <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-                <button id="language-toggle" class="language-toggle">
+                <a href="index.html#apps" data-en="Apps" data-es="Aplicaciones">Apps</a>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">
                     <span id="current-lang">EN</span> | <span id="other-lang">ES</span>
                 </button>
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <main class="page-content">
         <h1 data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</h1>
         <p data-en="This Software is provided by MySwiftApps and is intended for use as is." data-es="Este Software es proporcionado por MySwiftApps y está destinado para usarse tal como está.">This Software is provided by MySwiftApps and is intended for use as is.</p>
 
@@ -81,10 +86,16 @@
 
         <h2 data-en="Contact Us" data-es="Contáctenos">Contact Us</h2>
 
-        <p data-en="If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at feedback@appallday.com." data-es="Si tiene alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dude en contactarnos en feedback@appallday.com.">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at feedback@appallday.com.</p>
-    </section>
+        <p data-en="If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@myswiftapps.com." data-es="Si tiene alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dude en contactarnos en support@myswiftapps.com.">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@myswiftapps.com.</p>
+    </main>
     <footer>
-        <p data-en="&copy; 2024 MySwiftApps. All rights reserved." data-es="&copy; 2024 MySwiftApps. Todos los derechos reservados.">&copy; 2024 MySwiftApps. All rights reserved.</p>
+        <div class="footer-logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="110" height="auto"></div>
+        <div class="footer-links">
+            <a href="support.html" data-en="Support" data-es="Soporte">Support</a>
+            <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
+            <a href="terms-privacy.html" data-en="Terms &amp; Privacy" data-es="Términos y Privacidad">Terms &amp; Privacy</a>
+        </div>
+        <p class="copyright" data-en="&copy; 2026 MySwiftApps. All rights reserved." data-es="&copy; 2026 MySwiftApps. Todos los derechos reservados.">&copy; 2026 MySwiftApps. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

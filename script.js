@@ -1,7 +1,6 @@
 // Language functionality
 let currentLanguage = 'en'; // Default language is English
 
-// Language toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
     const languageToggle = document.getElementById('language-toggle');
     const currentLangElement = document.getElementById('current-lang');
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function switchLanguage(lang) {
         currentLanguage = lang;
-        
+
         // Update all elements with data attributes
         const elements = document.querySelectorAll('[data-en][data-es], [data-en-html], [data-es-html]');
         elements.forEach(element => {
@@ -51,12 +50,30 @@ document.addEventListener('DOMContentLoaded', function() {
         // Save language preference
         localStorage.setItem('preferred-language', lang);
 
-        // Update meta description
+        // Update meta description (not every page has one)
         const metaDescription = document.querySelector('meta[name="description"]');
-        if (lang === 'es') {
-            metaDescription.setAttribute('content', 'MySwiftApps ofrece software útil y divertido para mejorar tu vida y la de quienes amas.');
-        } else {
-            metaDescription.setAttribute('content', 'MySwiftApps offers useful and fun software to improve your life and the lives of those you love.');
+        if (metaDescription) {
+            if (lang === 'es') {
+                metaDescription.setAttribute('content', 'MySwiftApps es un estudio independiente que crea apps para iOS útiles y divertidas con Swift para mejorar tu vida y la de quienes amas.');
+            } else {
+                metaDescription.setAttribute('content', 'MySwiftApps is an independent studio crafting useful and fun iOS apps with Swift to improve your life and the lives of those you love.');
+            }
         }
+    }
+
+    // Scroll-reveal animations
+    const revealElements = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && revealElements.length) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealElements.forEach(el => observer.observe(el));
+    } else {
+        revealElements.forEach(el => el.classList.add('visible'));
     }
 });

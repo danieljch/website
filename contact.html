@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MySwiftApps</title>
+    <title data-en="Contact - MySwiftApps" data-es="Contacto - MySwiftApps">Contact - MySwiftApps</title>
+    <meta name="description" content="Get in touch with MySwiftApps for business inquiries.">
+    <link rel="icon" href="images/logoweb.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="150" height="auto"></div>
+            <div class="logo"><a href="index.html"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="120" height="auto"></a></div>
             <div class="nav-links">
                 <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-                <button id="language-toggle" class="language-toggle">
+                <a href="index.html#apps" data-en="Apps" data-es="Aplicaciones">Apps</a>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">
                     <span id="current-lang">EN</span> | <span id="other-lang">ES</span>
                 </button>
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <main class="page-content">
         <h1 data-en="Contact Us" data-es="Contáctanos">Contact Us</h1>
-        <p data-en="For any business inquiries, please contact us at business@myswiftapps.com" data-es="Para cualquier consulta comercial, contáctanos en business@myswiftapps.com">For any business inquiries, please contact us at business@myswiftapps.com</p>
-    </section>
+        <p data-en-html="For any business inquiries, please contact us at <a href='mailto:business@myswiftapps.com'>business@myswiftapps.com</a>." data-es-html="Para cualquier consulta comercial, contáctanos en <a href='mailto:business@myswiftapps.com'>business@myswiftapps.com</a>.">For any business inquiries, please contact us at <a href="mailto:business@myswiftapps.com">business@myswiftapps.com</a>.</p>
+        <p data-en-html="Looking for help with one of our apps? Visit our <a href='support.html'>Support page</a>." data-es-html="¿Buscas ayuda con una de nuestras apps? Visita nuestra <a href='support.html'>página de Soporte</a>.">Looking for help with one of our apps? Visit our <a href="support.html">Support page</a>.</p>
+    </main>
     <footer>
-        <p>&copy; 2023 MySwiftApps. All rights reserved.</p>
+        <div class="footer-logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="110" height="auto"></div>
+        <div class="footer-links">
+            <a href="support.html" data-en="Support" data-es="Soporte">Support</a>
+            <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
+            <a href="terms-privacy.html" data-en="Terms &amp; Privacy" data-es="Términos y Privacidad">Terms &amp; Privacy</a>
+        </div>
+        <p class="copyright" data-en="&copy; 2026 MySwiftApps. All rights reserved." data-es="&copy; 2026 MySwiftApps. Todos los derechos reservados.">&copy; 2026 MySwiftApps. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

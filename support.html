@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - MySwiftApps</title>
+    <title data-en="Support - MySwiftApps" data-es="Soporte - MySwiftApps">Support - MySwiftApps</title>
+    <meta name="description" content="Support and subscription help for MySwiftApps apps.">
+    <link rel="icon" href="images/logoweb.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="150" height="auto"></div>
+            <div class="logo"><a href="index.html"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="120" height="auto"></a></div>
             <div class="nav-links">
                 <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-                <button id="language-toggle" class="language-toggle">
+                <a href="index.html#apps" data-en="Apps" data-es="Aplicaciones">Apps</a>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">
                     <span id="current-lang">EN</span> | <span id="other-lang">ES</span>
                 </button>
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <main class="page-content">
         <h1 data-en="Support" data-es="Soporte">Support</h1>
-        <p data-en="If you have any questions or suggestions about our apps, do not hesitate to contact us at support@myswiftapps.com." data-es="Si tienes alguna pregunta o sugerencia sobre nuestras aplicaciones, no dudes en contactarnos en support@myswiftapps.com.">If you have any questions or suggestions about our apps, do not hesitate to contact us at support@myswiftapps.com.</p>
+        <p data-en-html="If you have any questions or suggestions about our apps, do not hesitate to contact us at <a href='mailto:support@myswiftapps.com'>support@myswiftapps.com</a>." data-es-html="Si tienes alguna pregunta o sugerencia sobre nuestras aplicaciones, no dudes en contactarnos en <a href='mailto:support@myswiftapps.com'>support@myswiftapps.com</a>.">If you have any questions or suggestions about our apps, do not hesitate to contact us at <a href="mailto:support@myswiftapps.com">support@myswiftapps.com</a>.</p>
 
         <h2 data-en="Cancel Subscription" data-es="Cancelar Suscripción">Cancel Subscription</h2>
-        <p data-en-html="Payments and subscriptions are managed through the App Store. For details on managing your subscription visit: <a href='https://support.apple.com/en-au/HT202039' target='_blank'>https://support.apple.com/en-au/HT202039</a>." data-es-html="Los pagos y las suscripciones se gestionan a través de la App Store. Para obtener detalles sobre cómo gestionar tu suscripción, visita: <a href='https://support.apple.com/es-mx/HT202039' target='_blank'>https://support.apple.com/es-mx/HT202039</a>.">Payments and subscriptions are managed through the App Store. For details on managing your subscription visit: <a href="https://support.apple.com/en-au/HT202039" target="_blank">https://support.apple.com/en-au/HT202039</a>.</p>
-    </section>
+        <p data-en-html="Payments and subscriptions are managed through the App Store. For details on managing your subscription visit: <a href='https://support.apple.com/en-au/HT202039' target='_blank' rel='noopener'>https://support.apple.com/en-au/HT202039</a>." data-es-html="Los pagos y las suscripciones se gestionan a través de la App Store. Para obtener detalles sobre cómo gestionar tu suscripción, visita: <a href='https://support.apple.com/es-mx/HT202039' target='_blank' rel='noopener'>https://support.apple.com/es-mx/HT202039</a>.">Payments and subscriptions are managed through the App Store. For details on managing your subscription visit: <a href="https://support.apple.com/en-au/HT202039" target="_blank" rel="noopener">https://support.apple.com/en-au/HT202039</a>.</p>
+    </main>
     <footer>
-        <p>&copy; 2023 MySwiftApps. All rights reserved.</p>
+        <div class="footer-logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="110" height="auto"></div>
+        <div class="footer-links">
+            <a href="support.html" data-en="Support" data-es="Soporte">Support</a>
+            <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
+            <a href="terms-privacy.html" data-en="Terms &amp; Privacy" data-es="Términos y Privacidad">Terms &amp; Privacy</a>
+        </div>
+        <p class="copyright" data-en="&copy; 2026 MySwiftApps. All rights reserved." data-es="&copy; 2026 MySwiftApps. Todos los derechos reservados.">&copy; 2026 MySwiftApps. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

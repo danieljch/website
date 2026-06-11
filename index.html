@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title" data-en="MySwiftApps - Useful and Fun Software for Better Living" data-es="MySwiftApps - Software Útil y Divertido para Vivir Mejor">MySwiftApps - Useful and Fun Software for Better Living</title>
+    <title data-en="MySwiftApps - Apps Built with Swift, Crafted with Care" data-es="MySwiftApps - Apps Hechas con Swift, Creadas con Cariño">MySwiftApps - Apps Built with Swift, Crafted with Care</title>
 
-    <meta name="description" content="MySwiftApps offers useful and fun software to improve your life and the lives of those you love.">
-    <meta name="keywords" content="apps, software, productivity, lifestyle">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="MySwiftApps is an independent studio crafting useful and fun iOS apps with Swift to improve your life and the lives of those you love.">
+    <meta name="keywords" content="apps, iOS, Swift, SwiftUI, software, productivity, lifestyle">
+    <meta property="og:title" content="MySwiftApps - Apps Built with Swift, Crafted with Care">
+    <meta property="og:description" content="An independent studio crafting useful and fun iOS apps to give you more quality time.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myswiftapps.com/">
+    <meta property="og:image" content="https://myswiftapps.com/images/logoweb.png">
+    <link rel="canonical" href="https://myswiftapps.com/">
+    <link rel="icon" href="images/logoweb.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="150" height="auto"></div>
+            <div class="logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="120" height="auto"></div>
             <div class="nav-links">
                 <a href="#apps" data-en="Apps" data-es="Aplicaciones">Apps</a>
                 <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
-                <button id="language-toggle" class="language-toggle">
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">
                     <span id="current-lang">EN</span> | <span id="other-lang">ES</span>
                 </button>
             </div>
@@ -28,97 +34,113 @@
     </header>
 
     <section class="hero">
-        <h1 data-en="Useful and fun software to improve your life and the lives of those you love" data-es="Software útil y divertido para mejorar tu vida y la de quienes amas">Useful and fun software to improve your life and the lives of those you love</h1>
-        <p data-en="Built with hope and love to give you more quality time" data-es="Construido con esperanza y amor para darte más tiempo de calidad">Built with hope and love to give you more quality time</p>
-        <a href="#apps" class="cta-button" data-en="Explore Our Apps" data-es="Explora Nuestras Apps" aria-label="Explore Our Apps">Explore Our Apps</a>
+        <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.1 4.2c3.4 4.4 4.5 9.2 3.1 12.9 1.2 1.5 1.5 2.9 1.5 2.9s-2.2-1-3.9-1.3c-1.7 1-4 1.5-6.4 1.2C6.6 19.4 2.9 16 2 11.6c1.7 1.5 4 2.9 6.6 3.6-2.3-1.7-4.7-4.4-6-7.2 2.5 2.4 5.6 4.5 8.3 5.6-2-2-4.2-5-5.5-7.9 3.2 3 7.4 6 9.5 7-.1-.4-.2-.8-.2-1.2 0-2.6 2.1-4.7 4.7-4.7-1-.9-1.7-1.7-2.3-2.6z"/></svg>
+            <span data-en="Built with Swift" data-es="Hecho con Swift">Built with Swift</span>
+        </span>
+        <h1>
+            <span data-en="Useful and fun software," data-es="Software útil y divertido,">Useful and fun software,</span>
+            <span class="gradient-text" data-en="crafted with care" data-es="creado con cariño">crafted with care</span>
+        </h1>
+        <p data-en="An independent studio making iOS apps that improve your life and the lives of those you love — built with hope and love to give you more quality time." data-es="Un estudio independiente que crea apps para iOS que mejoran tu vida y la de quienes amas — construidas con esperanza y amor para darte más tiempo de calidad.">An independent studio making iOS apps that improve your life and the lives of those you love — built with hope and love to give you more quality time.</p>
+        <div class="hero-actions">
+            <a href="#apps" class="cta-button" data-en="Explore Our Apps" data-es="Explora Nuestras Apps" aria-label="Explore Our Apps">Explore Our Apps</a>
+            <a href="contact.html" class="cta-button ghost" data-en="Get in Touch" data-es="Escríbenos" aria-label="Get in Touch">Get in Touch</a>
+        </div>
+        <div class="hero-icons" aria-hidden="true">
+            <img src="images/vibes.png" alt="">
+            <img src="images/habits.png" alt="">
+            <img src="images/weather.png" alt="">
+            <img src="images/calculator.png" alt="">
+            <img src="images/timer.png" alt="">
+        </div>
     </section>
 
-    <section class="features">
-        <div class="feature">
-            <img src="images/quality-time-icon.png" alt="Quality Time">
-            <h2 data-en="Quality Time" data-es="Tiempo de Calidad">Quality Time</h2>
-            <p data-en="Our apps help you make the most of your time, enhancing your daily routines." data-es="Nuestras aplicaciones te ayudan a aprovechar al máximo tu tiempo, mejorando tus rutinas diarias.">Our apps help you make the most of your time, enhancing your daily routines.</p>
+    <section class="features-section">
+        <div class="section-head reveal">
+            <p class="eyebrow" data-en="Why MySwiftApps" data-es="Por qué MySwiftApps">Why MySwiftApps</p>
+            <h2 data-en="Small apps, big intentions" data-es="Apps pequeñas, grandes intenciones">Small apps, big intentions</h2>
         </div>
-        <div class="feature">
-            <img src="images/love-and-care-icon.png" alt="Love and Care">
-            <h2 data-en="Love and Care" data-es="Amor y Cuidado">Love and Care</h2>
-            <p data-en="Designed with attention to detail and care for our users' wellbeing." data-es="Diseñadas con atención al detalle y cuidado por el bienestar de nuestros usuarios.">Designed with attention to detail and care for our users' wellbeing.</p>
-        </div>
-        <div class="feature">
-            <img src="images/life-enhancement-icon.png" alt="Life Enhancement">
-            <h2 data-en="Life Enhancement" data-es="Mejora de Vida">Life Enhancement</h2>
-            <p data-en="Transform ordinary tasks into meaningful and enjoyable experiences." data-es="Transforma tareas ordinarias en experiencias significativas y agradables.">Transform ordinary tasks into meaningful and enjoyable experiences.</p>
+        <div class="features">
+            <div class="feature reveal">
+                <img src="images/quality-time-icon.png" alt="Quality Time">
+                <h2 data-en="Quality Time" data-es="Tiempo de Calidad">Quality Time</h2>
+                <p data-en="Our apps help you make the most of your time, enhancing your daily routines." data-es="Nuestras aplicaciones te ayudan a aprovechar al máximo tu tiempo, mejorando tus rutinas diarias.">Our apps help you make the most of your time, enhancing your daily routines.</p>
+            </div>
+            <div class="feature reveal">
+                <img src="images/love-and-care-icon.png" alt="Love and Care">
+                <h2 data-en="Love and Care" data-es="Amor y Cuidado">Love and Care</h2>
+                <p data-en="Designed with attention to detail and care for our users' wellbeing." data-es="Diseñadas con atención al detalle y cuidado por el bienestar de nuestros usuarios.">Designed with attention to detail and care for our users' wellbeing.</p>
+            </div>
+            <div class="feature reveal">
+                <img src="images/life-enhancement-icon.png" alt="Life Enhancement">
+                <h2 data-en="Life Enhancement" data-es="Mejora de Vida">Life Enhancement</h2>
+                <p data-en="Transform ordinary tasks into meaningful and enjoyable experiences." data-es="Transforma tareas ordinarias en experiencias significativas y agradables.">Transform ordinary tasks into meaningful and enjoyable experiences.</p>
+            </div>
         </div>
     </section>
 
     <section id="apps" class="apps">
-        <h2 data-en="Our Apps" data-es="Nuestras Aplicaciones">Our Apps</h2>
+        <div class="section-head reveal">
+            <p class="eyebrow" data-en="The Portfolio" data-es="El Portafolio">The Portfolio</p>
+            <h2 data-en="Our Apps" data-es="Nuestras Aplicaciones">Our Apps</h2>
+            <p data-en="Five native iOS apps, each focused on doing one thing beautifully." data-es="Cinco apps nativas para iOS, cada una enfocada en hacer una cosa de forma hermosa.">Five native iOS apps, each focused on doing one thing beautifully.</p>
+        </div>
         <div class="app-grid">
-            <div class="app-item">
+            <div class="app-item reveal">
                 <img src="images/vibes.png" alt="Vibes">
                 <h3>Vibes</h3>
                 <p data-en="Music to focus, relax, sleep" data-es="Música para concentrarse, relajarse, dormir">Music to focus, relax, sleep</p>
-                <div class="app-store-overlay">
-                    <a href="#" class="app-store-btn" aria-label="Download Vibes on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span data-en="App Store" data-es="App Store">App Store</span>
-                    </a>
-                </div>
+                <a href="#" class="app-store-btn" aria-label="Download Vibes on the App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-en="App Store" data-es="App Store">App Store</span>
+                </a>
             </div>
-            <div class="app-item">
+            <div class="app-item reveal">
                 <img src="images/habits.png" alt="Habits">
                 <h3>Habits</h3>
                 <p data-en="Master a new habit" data-es="Domina un nuevo hábito">Master a new habit</p>
-                <div class="app-store-overlay">
-                    <a href="#" class="app-store-btn" aria-label="Download Habits on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span data-en="App Store" data-es="App Store">App Store</span>
-                    </a>
-                </div>
+                <a href="#" class="app-store-btn" aria-label="Download Habits on the App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-en="App Store" data-es="App Store">App Store</span>
+                </a>
             </div>
-            <div class="app-item">
+            <div class="app-item reveal">
                 <img src="images/weather.png" alt="Weather">
                 <h3>Weather</h3>
                 <p data-en="Play with the weather" data-es="Juega con el clima">Play with the weather</p>
-                <div class="app-store-overlay">
-                    <a href="#" class="app-store-btn" aria-label="Download Weather on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span data-en="App Store" data-es="App Store">App Store</span>
-                    </a>
-                </div>
+                <a href="#" class="app-store-btn" aria-label="Download Weather on the App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-en="App Store" data-es="App Store">App Store</span>
+                </a>
             </div>
-            <div class="app-item">
+            <div class="app-item reveal">
                 <img src="images/calculator.png" alt="Calculator">
                 <h3>Calculator</h3>
                 <p data-en="Play with numbers" data-es="Juega con números">Play with numbers</p>
-                <div class="app-store-overlay">
-                    <a href="#" class="app-store-btn" aria-label="Download Calculator on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span data-en="App Store" data-es="App Store">App Store</span>
-                    </a>
-                </div>
+                <a href="#" class="app-store-btn" aria-label="Download Calculator on the App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-en="App Store" data-es="App Store">App Store</span>
+                </a>
             </div>
-            <div class="app-item">
+            <div class="app-item reveal">
                 <img src="images/timer.png" alt="Timer">
                 <h3>Timer</h3>
                 <p data-en="Play with time" data-es="Juega con el tiempo">Play with time</p>
-                <div class="app-store-overlay">
-                    <a href="#" class="app-store-btn" aria-label="Download Timer on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <span data-en="App Store" data-es="App Store">App Store</span>
-                    </a>
-                </div>
+                <a href="#" class="app-store-btn" aria-label="Download Timer on the App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    <span data-en="App Store" data-es="App Store">App Store</span>
+                </a>
             </div>
         </div>
-        <a href="#" class="cta-button" data-en="See All Apps" data-es="Ver Todas las Aplicaciones" aria-label="See All Apps">See All Apps</a>
     </section>
 
     <footer>
-        <div class="footer-logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="130" height="auto"></div>
+        <div class="footer-logo"><img src="images/logoweb.png" alt="MySwiftApps Logo" width="110" height="auto"></div>
         <div class="footer-links">
             <a href="support.html" data-en="Support" data-es="Soporte">Support</a>
             <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
-            <a href="terms-privacy.html" data-en="Terms & Privacy" data-es="Términos y Privacidad">Terms & Privacy</a>
+            <a href="terms-privacy.html" data-en="Terms &amp; Privacy" data-es="Términos y Privacidad">Terms &amp; Privacy</a>
         </div>
         <p class="copyright" data-en="&copy; 2026 MySwiftApps. All rights reserved." data-es="&copy; 2026 MySwiftApps. Todos los derechos reservados.">&copy; 2026 MySwiftApps. All rights reserved.</p>
     </footer>
